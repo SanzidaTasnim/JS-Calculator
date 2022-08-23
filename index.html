@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="calculator">
+            <form action="" name="forms">
+                <div class="display-section">
+                    <input type="text" id="display" name="display" placeholder="0">
+                </div>
+
+                <div class="button">
+                    <div class="button-line"> 
+                        <input type="button" value="7" onclick="selectNum(this.value)">
+                        <input type="button" value="8" onclick="selectNum(this.value)">
+                        <input type="button" value="9" onclick="selectNum(this.value)">
+                        <input type="button" class="Division" value="/" onclick="selectNum(this.value)">
+                    </div>
+                    <div class="button-line"> 
+                        <input type="button" value="4" onclick="selectNum(this.value)">
+                        <input type="button" value="5" onclick="selectNum(this.value)">
+                        <input type="button" value="6" onclick="selectNum(this.value)">
+                        <input type="button" class="Multiplication" value="*" onclick="selectNum(this.value)">
+                    </div>
+                    <div class="button-line"> 
+                        <input type="button" value="1" onclick="selectNum(this.value)">
+                        <input type="button" value="2" onclick="selectNum(this.value)">
+                        <input type="button" value="3" onclick="selectNum(this.value)">
+                        <input type="button" class="Subtraction" value="-" onclick="selectNum(this.value)">
+                    </div>
+                    <div class="button-line"> 
+                    <input type="button" value="0" onclick="selectNum(this.value)">
+                    <input type="button" value="." onclick="selectNum(this.value)">
+                    <input type="button" class="clear" value="C" onclick="clearValue()" >
+                    <input type="button" class="Addition" value="+"  onclick="selectNum(this.value)">
+                    </div>
+                    <div class="button-line"> 
+                    <input type="button" id="result" value="=" onclick="calculate()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

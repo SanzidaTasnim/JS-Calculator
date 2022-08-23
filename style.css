@@ -1,0 +1,79 @@
+.container {
+    width: 425px;
+    margin: 0 auto;
+}
+
+.calculator {
+    margin-top: 50px;
+    width: 394px;
+    height: 441px;
+    background: #8285ab;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 5px 12px 5px #c2ab8691;
+}
+
+input#display {
+    width: 380px;
+    padding: 31px 0px;
+    font-size: 20px;
+    text-align: right;
+    background: #e8e8e8;
+}
+
+.button {
+    width: 374px;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.button-line input {
+    width: 85px;
+    height: 55px;
+    margin-top: 11px;
+    margin-left: 5px;
+    font-size: 23px;
+    border-radius: 10px;
+    border: 0;
+    transition: all linear 0.4s;
+}
+
+.button-line input:hover {
+    background: #170c0c;
+    color: white;
+}
+
+input.Multiplication,
+input.Division,
+input.Subtraction,
+input.Addition {
+    background: rgb(93 8 104);
+    color: white;
+    border: navajowhite;
+    border-radius: 10px;
+    transition: all linear 0.4s;
+}
+input.Addition.hover,
+input.Subtraction:hover,
+input.Division:hover,
+input.Multiplication:hover,
+input.clear.hover,
+input#result:hover {
+    background: #170c0c;
+    color: white;
+}
+
+input.clear {
+    background: #f60d0db0;
+    color: white;
+    border: rgb(194, 95, 95);
+    transition: all linear 0.4s;
+}
+input#result {
+    width: 372px;
+    background: rgb(93 8 104);
+    color: white;
+    transition: all linear 0.4s;
+}
